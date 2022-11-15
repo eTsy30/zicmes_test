@@ -1,0 +1,85 @@
+.botton_rombica {
+    background: red;
+    border: none;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    left: 1px;
+    color: aliceblue;
+    font-weight: 800;
+    z-index: 2;
+}
+
+.botton_disable {
+    background: rgb(121, 104, 104);
+    border: none;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    left: 1px;
+    color: aliceblue;
+    font-weight: 800;
+    z-index: 2;
+
+}
+
+@media (min-width: 480px) {
+    .botton_disable:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -27px;
+        border: 17px solid transparent;
+        border-left: 10px solid rgb(121, 104, 104);
+        border-top: 33px solid rgb(121, 104, 104);
+    }
+
+
+    .botton_disable:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -27px;
+        border: 17px solid transparent;
+        border-right: 10px solid rgb(121, 104, 104);
+        border-bottom: 33px solid rgb(121, 104, 104);
+    }
+
+    .botton_rombica:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -27px;
+        border: 17px solid transparent;
+        border-left: 10px solid red;
+        border-top: 33px solid red;
+    }
+
+
+    .botton_rombica:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -27px;
+        border: 17px solid transparent;
+        border-right: 10px solid red;
+        border-bottom: 33px solid red;
+    }
+}
+
+@media (max-width: 480px) {
+    .botton_rombica {
+        background: rgb(255, 0, 0);
+        border: none;
+        width: 100px;
+        height: 50px;
+        position: relative;
+        margin: 0;
+
+        color: aliceblue;
+        font-weight: 800;
+        border: 1px solid white;
+    }
+
+
+}

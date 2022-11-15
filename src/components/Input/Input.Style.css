@@ -1,0 +1,28 @@
+.input_rombica {
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    height: 46px;
+    width: 100%;
+    border: 1px solid white;
+
+}
+
+input {
+    padding-left: 30px;
+}
+
+input:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+@media (min-width: 480px) {
+    .input_rombica {
+        background: rgba(255, 255, 255, 0);
+        border: none;
+        height: 46px;
+        width: 100%;
+
+    }
+
+}
