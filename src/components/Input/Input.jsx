@@ -1,16 +1,19 @@
-import React, { useState } from 'react'
+import React from 'react'
 import'./Input.Style.css'
-export const Input = ({placeholder,onChange}) => {
-   const[valid, setValid]=useState(null)
-   const handleVaildate=(event)=>{
-      setValid(event.target.value)
-      onChange(event.target.value)
+
+export const Input = (props) => {
+   const onChange=(event)=>{
+     const {value}=event.target
+    
+     props.onChange(value)
+    
    }
   return (
    <input 
-        onChange={handleVaildate}
-        className='input_rombica' placeholder={placeholder}
-        value={valid}
+        onChange={onChange}
+        className='input_rombica' 
+        placeholder={props.placeholder}
+        value={props.value}
   />
    
   )
