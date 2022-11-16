@@ -10,9 +10,8 @@ const REQEST_URL = 'https://httpbin.org/anything'
 export const SearchForm = () => {
     const [value, setValue] = useState('')
     const onSubmit = async () => {
+        const resporse = await reqest(REQEST_URL, value)
         try {
-            setLoading(false)
-            const resporse = await reqest(REQEST_URL, value, isLoading)
             onSuccess(resporse)
         } catch {
             onError(resporse)
