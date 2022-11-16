@@ -1,0 +1,9 @@
+{
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true,
+    "emmet.triggerExpansionOnTab": false,
+    "prettier.tabWidth": 4,
+    "prettier.bracketSameLine": true,
+    "editor.formatOnSave": true,
+    "prettier.configPath": ".prettierrc.json"
+}

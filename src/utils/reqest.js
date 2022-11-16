@@ -1,12 +1,12 @@
-
-export const reqest = async (url, value) => {
+const reqest = async (url, value, isLoading) => {
     const options = {
         headers: {
-            Accept: "application/json"
+            Accept: 'application/json',
         },
-        method: "POST"
-    }
-    const urlPrepair = `${url}/${value}`
+        method: 'POST',
+    };
+    const urlPrepair = isLoading ? `${url}/${value}` : '';
     const response = await fetch(urlPrepair, options);
-    return response
-}
+    return response;
+};
+export default reqest

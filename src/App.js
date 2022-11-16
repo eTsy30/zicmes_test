@@ -1,9 +1,9 @@
 import './App.css';
-import { SearchForm } from './components/SearchForm/SearchForm'
+import { SearchForm } from './components/SearchForm/SearchForm';
 
 function App() {
   return (
-    <div className='pp'>
+    <div className='container'>
       <SearchForm />
     </div>
   );
