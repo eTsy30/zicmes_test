@@ -11,6 +11,7 @@ export const SearchForm = () => {
     const [value, setValue] = useState('')
     const onSubmit = async () => {
         const resporse = await reqest(REQEST_URL, value)
+        console.log(resporse)
         try {
             onSuccess(resporse)
         } catch {
